@@ -1,8 +1,10 @@
 # MyBatis 排序插件 OrderByHelper
 
-类似分页插件 [PageHelper](https://github.com/pagehelper/Mybatis-PageHelper) 用法，支持对任意 SQL 进行排序，如果原 SQL 存在排序，使用后会替换默认的排序。
+类似分页插件 [PageHelper](https://github.com/pagehelper/Mybatis-PageHelper) 用法，支持对任意查询（Select）SQL 进行排序，如果原 SQL 存在排序，使用后会替换默认的排序。
 
 当前支持的功能和分页插件 4.2.x 及以前版本的功能一样，没有特别的地方。
+
+目前不支持参数形式用法，以后会根据反馈逐步完善。
 
 ## 引入依赖
 ```xml
@@ -40,7 +42,7 @@ Mybatis XML 配置方式：
 在任意查询方法前调用，后面紧跟查询（避免中间出现可能存在异常或导致不执行查询的条件判断代码）：
 ```java
 OrderByHelper.orderBy("id desc");
-return mapper.selectByExample(example);
+return mapper.select(country);
 ```
 
 ## 作者信息
