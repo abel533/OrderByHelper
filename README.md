@@ -32,11 +32,12 @@ Spring 配置方式：
 Mybatis XML 配置方式：
 ```xml
 <plugins>
+    <!-- 分页插件或其他插件，OrderBy 一定要在分页插件下面（主要是为了避免 count 也被增加排序） -->
     <plugin interceptor="tk.mybatis.orderbyhelper.OrderByHelper"/>
 </plugins>
 ```
 
-如果使用 Spring Boot，可以参考 [Spring Boot - 配置排序依赖技巧](http://blog.csdn.net/isea533/article/details/53975720) 这篇文章写个简单配置引入，并且保证在分页插件自动配置后执行。
+如果使用 Spring Boot，可以参考 [Spring Boot - 配置排序依赖技巧](http://blog.csdn.net/isea533/article/details/53975720) 写个简单配置引入，并且保证在分页插件自动配置后执行。
 
 ## 使用方式
 在任意查询方法前调用，后面紧跟查询（避免中间出现可能存在异常或导致不执行查询的条件判断代码）：
