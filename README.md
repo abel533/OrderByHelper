@@ -46,6 +46,12 @@ OrderByHelper.orderBy("id desc");
 return mapper.select(country);
 ```
 
+## 和 Spring Boot 集成
+
+使用 [cuisongliu](https://github.com/cuisongliu) 提供的 https://github.com/cuisongliu/orderbyhelper-boot-starter
+
+按照该项目首页的文档进行配置即可。
+
 ## 作者信息
 
 MyBatis 工具网站:[http://mybatis.tk](http://www.mybatis.tk)
