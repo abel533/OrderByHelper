@@ -103,6 +103,8 @@ public class OrderByHelper implements Interceptor {
             }
             String sql = boundSql.getSql();
             String orderBySql = OrderByParser.converToOrderBySql(sql, orderBy);
+            //更新cacheKey，防止缓存错误#3
+            cacheKey.update(orderBy);
             BoundSql orderbyBoundSql = new BoundSql(ms.getConfiguration(), orderBySql, boundSql.getParameterMappings(), parameter);
             Map<String, Object> additionalParameters = (Map<String, Object>) additionalParametersField.get(boundSql);
             for (String key : additionalParameters.keySet()) {

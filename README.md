@@ -11,7 +11,7 @@
 <dependency>
     <groupId>tk.mybatis</groupId>
     <artifactId>orderby-helper</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
@@ -38,6 +38,10 @@ Mybatis XML 配置方式：
 ```
 
 如果使用 Spring Boot，可以参考 [Spring Boot - 配置排序依赖技巧](http://blog.csdn.net/isea533/article/details/53975720) 写个简单配置引入，并且保证在分页插件自动配置后执行。
+
+## 0.0.2 更新日志 - 2017-05-18
+
+- 更新cacheKey，防止缓存错误[#3](https://github.com/abel533/OrderByHelper/issues/3)
 
 ## 使用方式
 在任意查询方法前调用，后面紧跟查询（避免中间出现可能存在异常或导致不执行查询的条件判断代码）：
