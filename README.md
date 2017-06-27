@@ -6,6 +6,17 @@
 
 目前不支持参数形式用法，以后会根据反馈逐步完善。
 
+## 新书《MyBatis 从入门到精通》
+
+![MyBatis 从入门到精通](https://github.com/mybatis-book/book/raw/master/book.png)
+
+预售地址：[京东](https://item.jd.com/12103309.html)，[当当](http://product.dangdang.com/25098208.html)，[亚马逊](https://www.amazon.cn/MyBatis从入门到精通-刘增辉/dp/B072RC11DM/ref=sr_1_18?ie=UTF8&qid=1498007125&sr=8-18&keywords=mybatis)
+
+CSDN博客：http://blog.csdn.net/isea533/article/details/73555400
+
+GitHub项目：https://github.com/mybatis-book/book
+
+
 ## 引入依赖
 ```xml
 <dependency>
@@ -64,6 +75,6 @@ MyBatis 工具网站:[http://mybatis.tk](http://www.mybatis.tk)
 
 作者邮箱： abel533@gmail.com
 
-Mybatis工具群： <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=29e4cce8ac3c65d14a1dc40c9ba5c8e71304f143f3ad759ac0b05146e0952044"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Mybatis工具" title="Mybatis工具"></a>
+Mybatis工具群： <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=7c2f018e4cddc7d4aad04fc312b2d69361a0a896a4f59219a7914953a57bffc2"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Mybatis工具群" title="Mybatis工具群"></a>
 
 推荐使用Mybatis分页插件:[PageHelper分页插件](https://github.com/pagehelper/Mybatis-PageHelper)
